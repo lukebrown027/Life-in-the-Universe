@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+.wrap {
+    position: relative;
+}
+
+#jupiterlink {
+    position: absolute;
+    top: 32.5%;
+    left: 46.5%;
+    width: 22%;
+    height: 36.5%;
+    border-radius: 100%;
+}
+
+#marslink {
+    position: absolute;
+    top: 44%;
+    left: 68.75%;
+    width: 6.5%;
+    height: 11.5%;
+    border-radius: 100%;
+}
+
+#earthlink {
+    position: absolute;
+    top: 41%;
+    left: 73%;
+    width: 7%;
+    height: 12%;
+    border-radius: 100%;
+}
+
+#jupiterlink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 2em 1em black inset;
+}
+
+#marslink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0.5em 1em black inset;
+}
+
+#earthlink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0.5em 1em black inset;
+}
+
+.planetbg {
+    background-image: url("images/away_background_flip.jpg");
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.menubar {
+    display: flex;
+    width: 100%;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a.title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1.3em;
+}
+
+a:hover.title {
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+a {
+    flex: 0.2;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+a:active {
+    background: black;
+    color: #fcf7f0;
+    text-decoration: underline;
+}
+
+h1:not(.awayTitle, .planetTitle) {
+    font-family: 'Poppins', sans-serif;
+    text-indent: 5.1vw;
+}
+
+hr {
+    color: white;
+    width: 100%;
+}
+
+main {
+    margin: 1;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+main.home {
+    text-indent: 10%;
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+aside {
+    background-color: black;
+    padding: 2%;
+    float: right;
+    width: 19.25vw;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+aside li {
+    padding-bottom: 6.25vw;
+    font-size: 1.0625em;
+    list-style-type: none;
+}
+
+.articles {
+    float: left;
+}
+
+
+@media (max-width: 1010px) {
+
+    .menubar {
+        font-size: 0.75em;
+    }
+
+}
+
+article h4 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    text-indent: 2vw;
+    width: 68.75vw;
+}
+
+article p {
+    color: #8896a6;
+    font-family: "Source Code Pro", monospace, sans-serif;
+    font-size: 0.9375em;
+    text-align: left;
+    margin-left: 27%;
+    text-indent: 2vw;
+    width: 68.75vw;
+}
+
+footer {
+    display: flex;
+    height: 100%;
+}
+
+footer a {
+    text-decoration: underline;
+    line-height: 2;
+    color: #8896a6;
+    font-size: 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+cite {
+    font-size: 1em;
+    font-family: "Source Code Pro", monospace, sans-serif;
+    font-style: normal;
+    color: #8896a6;
+    margin-left: 5%;
+    width: 100%;
+}
+
+.indent {
+    text-indent: 10%;
+}
+
+figure.planetFig {
+    display: block;
+    margin: 1.875vw;
+    text-align: center;
+}
+
+figure img.planetFig {
+    width: 35%;
+}
+
+figure figcaption {
+    align-self: flex-end;
+    font-size: 1em;
+    font-family: "Source Code Pro", monospace, sans-serif;
+    color: #8896a6;
+    text-align: center;
+}
+
+figure a {
+    text-decoration: underline;
+    line-height: 1;
+    color: #8896a6;
+    font-size: 1em;
+}
+
+figure.articleFig {
+    display: block;
+    margin-top: 10vh;;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+figure img.articleFig {
+    width: 25%;
+}
+
+.awaybg {
+    background-image: url("images/away_background.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+figure.galaxy {
+    display: block;
+    margin: 1.875vw;
+    text-align: center;
+}
+
+figure img.galaxy {
+    width: 60%;
+}
+
+h1.awayTitle {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    text-indent: none;
+    letter-spacing: 0.25em;
+}
+
+.awayText:not(ol) {
+    font-family: "Source Code Pro", monospace, sans-serif;
+    color: #dbdbdb;
+    text-align: justify;
+    margin: 0 auto;
+    width: 80vw;
+    line-height: 2;
+    font-size: 1.3em;
+}
+
+ol.awayText {
+    font-family: "Source Code Pro", monospace, sans-serif;
+    color: #dbdbdb;
+    text-align: justify;
+    margin: 0 auto;
+    margin-left: 20vw;
+    width: 60vw;
+    line-height: 2;
+    font-size: 1.3em;
+}
+
+h2.awaySubTitle {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+
+h2.homeSubTitle {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+}
+
+.homeText {
+    font-family: 'Source Code Pro', monospace, sans-serif;
+    color: #dbdbdb;
+    text-align: center;
+    margin: 0 auto;
+    width: 80vw;
+    line-height: 2;
+    font-size: 1.1em;
+}
+
+.logo {
+    float: left;
+    width: 8vw;
+    margin: 1vw;
+    margin-right: 0;
+}
+
+.articleimg {
+    width: 5vw;
+    float: left;
+    margin-left: 20%;
+}
+
+.contact {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 60vw;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+legend {
+    font-size: 1.7em;
+    font-style: bold;
+}
+
+label {
+    font-size: 1.3em;
+}
+
+form input {
+    width: 80%;
+    height: auto;
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+form textarea {
+    width: 80%;
+    height: auto;
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+form button {
+    width: 20%;
+    height: auto;
+}
+
+.scroll1 {
+    opacity: 0;
+    transform: translateY(5vh);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll1.show {
+    opacity: 1;
+    transform: translateY(0);
+}
